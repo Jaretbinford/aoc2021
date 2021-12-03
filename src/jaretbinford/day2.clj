@@ -6,8 +6,8 @@
 
 (def parsed-input
   (->> (slurp puzzle-input)
-       (clojure.string/split-lines)
-       (map #(clojure.string/split % #" "))
+       (s/split-lines)
+       (map #(s/split % #" "))
        (map (fn [[direction value]]
               [(keyword direction) (Integer/parseInt value)]))))
 
