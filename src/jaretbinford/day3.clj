@@ -35,6 +35,7 @@
       1
       0)))
 
+
 ;binary math, specifically bit-xor allows me to find least common from most common
 (def power-consumption
   (let
